@@ -1,25 +1,3 @@
-server:
-  port: 8889
-  jsp-servlet:
-    init-parameters:
-      development: true
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/springcloud?zeroDateTimeBehavior=convertToNull
-    username: root
-    password: root
-  mvc:
-    view:
-      prefix: /
-      suffix: .jsp
-  application:
-    name: client
-mybatis:
-  type-aliases-package: com.baizhi.entity
-  mapper-locations: mapper/*.xml
 
 eureka:
   client:
